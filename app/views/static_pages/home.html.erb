@@ -1,2 +1,121 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+
+<!doctype html>
+<htm>
+  <head>
+    <title>Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- 独自のCSS -->
+    <%= stylesheet_link_tag    'portfolio', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <div class = "header">
+      <div class = "title">
+        <h1>Portfolio</h1>
+      </div>
+    </div>
+
+    <div class = "block">
+      <h3>
+        <!-- <a href="profile.html"> -->
+        自己紹介
+        <!-- </a> -->
+      </h3>
+      <input type="checkbox" id='acclabel1' class="cssacc" />
+      <div class = "profile">
+        <h4>経歴</h4>
+        2008年4月 青山学院大学入学<br>
+        2012年3月 同大学卒業<br>
+        2012年4月 青山学院大学大学院 理工学研究科入学 <br>
+        2014年3月 同大学院卒業<br>
+        2014年4月 テクバン株式会社入社<br>
+        現在　　　テクバン株式会社 金融システム本部 在籍<br>
+        <br>
+        独立系SIerとして、大手証券会社に常駐して債券在庫管理システム開発PJに参画。<br>
+        主に基本設計～テストまで一連の開発工程を担当しており、<br>
+        債券取引業務知識も有し、業務に沿った開発を行っている。<br>
+        現在は、自社チームのサブリーダーを努め、品質、納期などの管理している。<br>
+        <br><br>
+
+        <h4>仕事を行う上でのこだわり</h4>
+        <u>ユーザー目線に立ったシステムの開発</u><br>
+        開発する上でユーザーが使いやすいシステムを開発をできるように心がけている。<br>
+        ユーザー業務理解のため研鑽を行っており、債券取引業の理解のため自社メンバーで輪読会を開催し、<br>
+        日々勉強を行っている。2017年に証券外務員2種も取得した。<br>
+        <u>チーム力強化の意識</u><br>
+        チームメンバーへの意識の強化を重視している。<br>
+        メンバーに開発についての説明、指導を行う際は、
+        機能の説明だけでなく、そのシステムに関する業務から説明するようにしており、<br>
+        メンバーが納得感、参画意識を持って開発を行うことできるように心がけている。<br>
+        また、勉強会を開催するなどして、チーム全体での知識向上を行い、チーム力の強化につながるよう行動している。<br>
+        <br><br>
+
+        <h4>習得スキル</h4>
+        【使用言語】<br>
+        　C#：4年半経験。業務で利用できるレベル<br>
+        　HTML/CSS/PHP：簡単なプログラミングができるレベル<br>
+        　Ruby：簡単なプログラミングができるレベル<br>
+        【DB】<br>
+        　SQLServer：4年半経験。業務で利用できるレベル<br>
+        【フレームワーク】<br>
+        　.NET Framework：4年半経験。業務で利用できるレベル<br>
+        <br>
+
+      </div>
+      <label for = 'acclabel1'><h5>more...<h5></label>
+    </div>
+
+    <div class = "block">
+      <h3>実績</h3>
+
+      <!-- プロジェクト１ -->
+      <label for = 'acclabel2'><h5>・証券会社の在庫管理システムの他システム連携機能追加</h5></label>
+      <input type="checkbox" id='acclabel2' class="cssacc" />
+      <div class = "projects" id = 'project1'>
+        【期間】<br>
+        2015年12月～2016年12月<br>
+        【プロジェクト概要、担当業務】<br>
+        某大手証券会社の債券在庫管理システム保守案件に参画。<br>
+        他システム（証券会社と投資家の債券注文の自動照合機能を持つ）との連携機能追加するエンハンス対応を担当。<br>
+        要件定義～テストまで一連の工程に携わり、（要件定義はPLの補佐として打ち合わせに参加。資料作成等を担当した。）<br>
+        また、自社メンバー6名のサブリーダーとして、開発工程全般の開発指揮や品質管理を行った。<br>
+        【規模】<br>
+        要員10名、開発工数90人月<br>
+        【環境】<br>
+        OS:Windows、言語:C#、DB:SQLServer、開発ツール:VisualStudio<br>
+      </div>
+      <br>
+      <!-- プロジェクト２ -->
+      <label for = 'acclabel3'><h5>・取引入力プラットフォームとの連携機能追加</h5></label>
+      <input type="checkbox" id='acclabel3' class="cssacc" />
+      <div class = "projects" id = 'project2'>
+        【期間】<br>
+        2017年1月～2017年11月<br>
+        【プロジェクト概要、担当業務】<br>
+        某大手証券会社の債券在庫管理システム保守案件に参画。<br>
+        ３つの他システム取引入力プラットフォームとの連携機能追加するエンハンス対応を担当。<br>
+        基本設計～テストまで工程を自社メンバー5名で請け負い、主に品質管理、スケジュール管理、要員管理を担当。<br>
+        【規模】<br>
+        要員5名、開発工数50人月<br>
+        【環境】<br>
+        OS:Windows、言語:C#、DB:SQLServer、開発ツール:VisualStudio<br>
+      </div>
+    </div>
+
+    <div class = "block">
+      <h3>今後やりたいこと</h3>
+      <h5>・自分の身近な人の生活をより豊かにできる、助けになるようなモノづくり</h5><br>
+      <h5>・求められるサービスを作るだけでなく、より良いサービスを提案していくような仕事に関わる</h5><br>
+      <h5>・リモートワークや副業などを駆使し、田舎に住みながらモノづくりを続けていけるような、どこにいても働けるSEになる</h5><br>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
