@@ -2,7 +2,7 @@
   height: 200px;
   margin: 5px 50px;
   padding: 75px 0px;
-  background: url('header.gif');
+  background: url('header.jpg');
   background-size: cover;
   background-position: 20% 40%;
 }
@@ -31,7 +31,7 @@ label:hover {
   width:200px;
   height:200px;
   border-radius:50%;
-  background: url('header.gif');
+  background: url('header.jpg');
   float: left;
   margin-right: auto;
 }
