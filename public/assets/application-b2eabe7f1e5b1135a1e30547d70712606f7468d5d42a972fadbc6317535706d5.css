@@ -1,0 +1,76 @@
+.header{
+  height: 200px;
+  margin: 5px 50px;
+  padding: 75px 0px;
+  background: url('header.gif');
+  background-size: cover;
+  background-position: 20% 40%;
+}
+.title{
+  background: #ddd;
+  height: 50px;
+  width: 400px;
+  padding: 0px 100px;
+}
+.block{
+  height: auto;
+  margin: 0px 50px;
+  padding: 30px 50px;
+}
+input {
+display: none;
+}
+label {
+  color: #00CCFF;
+}
+label:hover {
+  text-decoration: underline;
+  color: #191970;
+}
+.picture {
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  background: url('../header/header.gif');
+  float: left;
+  margin-right: auto;
+}
+.profile {
+  height: 180px;
+  overflow: hidden;
+  transition: 0.8s;
+  border: solid 1px #CCCCCC;
+  padding: 5px;
+}
+.cssacc:checked + .profile {
+  height: 1000px;
+  border: solid 1px #CCCCCC;
+  padding: 5px;
+}
+.projects {
+  height: 0px;
+  overflow: hidden;
+  transition: 0.8s;
+  padding: 5px;
+}
+.cssacc:checked + .projects {
+  height: 300px;
+  border: solid 1px #CCCCCC;
+  padding: 5px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
